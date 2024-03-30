@@ -1,2 +1,2 @@
-mod palette;
-mod color;
+pub mod palette;
+pub mod color;
