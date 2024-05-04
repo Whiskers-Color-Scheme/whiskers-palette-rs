@@ -10,7 +10,7 @@ pub enum WhiskersColor {
     PantherNeutral,
     PantherNeutralTwo,
     PantherNeutralThree,
-    PantherNeutralFor,
+    PantherNeutralFour,
     PantherNeutralFive,
     PantherNeutralSix,
     PantherNeutralSeven,
@@ -18,7 +18,7 @@ pub enum WhiskersColor {
     PantherText,
     PantherTextTwo,
     PantherTextThree,
-    PantherTextFor,
+    PantherTextFour,
     TigerBanana,
     TigerBlueberry,
     TigerCherry,
@@ -28,7 +28,7 @@ pub enum WhiskersColor {
     TigerNeutral,
     TigerNeutralTwo,
     TigerNeutralThree,
-    TigerNeutralFor,
+    TigerNeutralFour,
     TigerNeutralFive,
     TigerNeutralSix,
     TigerNeutralSeven,
@@ -36,7 +36,7 @@ pub enum WhiskersColor {
     TigerText,
     TigerTextTwo,
     TigerTextThree,
-    TigerTextFor,
+    TigerTextFour,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
