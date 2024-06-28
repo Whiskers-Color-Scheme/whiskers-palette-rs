@@ -6,6 +6,13 @@ pub struct WhiskersPalette {
     pub tiger: Palette,
 }
 
+impl WhiskersPalette {
+    pub fn colors(&self) -> Vec<Color> {
+        let colors = [get_panther_palette().colors(), get_tiger_palette().colors()].concat();
+        colors
+    }
+}
+
 #[derive(Debug, Clone)]
 pub struct Palette {
     pub banana: Color,
@@ -26,6 +33,31 @@ pub struct Palette {
     pub text_two: Color,
     pub text_three: Color,
     pub text_four: Color,
+}
+
+impl Palette {
+    pub fn colors(&self) -> Vec<Color> {
+        vec![
+            self.banana.to_owned(),
+            self.blueberry.to_owned(),
+            self.cherry.to_owned(),
+            self.grape.to_owned(),
+            self.kiwi.to_owned(),
+            self.tangerine.to_owned(),
+            self.neutral.to_owned(),
+            self.neutral_two.to_owned(),
+            self.neutral_three.to_owned(),
+            self.neutral_four.to_owned(),
+            self.neutral_five.to_owned(),
+            self.neutral_six.to_owned(),
+            self.neutral_seven.to_owned(),
+            self.neutral_eight.to_owned(),
+            self.text.to_owned(),
+            self.text_two.to_owned(),
+            self.text_three.to_owned(),
+            self.text_four.to_owned(),
+        ]
+    }
 }
 
 pub fn get_panther_palette() -> Palette {
